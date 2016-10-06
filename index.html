@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>臺大藝術季 NTUAF OFFICIAL WEBSITE</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- uikit css -->
+    <link rel="stylesheet" href="css/uikit.min.css" />
+    <!-- custom fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="less/main.css">
+    <meta property="og:url" content="http://artfest.ntu.edu.tw"/>
+    <meta property="og:title" content="臺大藝術季 NTUAF OFFICIAL WEBSITE"/>
+    <meta property="og:description" content="臺大藝術季是每年臺大最盛大的藝文活動，策展團隊以及創作者涵括台北七所大學以及臺大學生共 600 多名，每年都有不同的創新以及突破，今年是二十二屆的臺大藝術季，我們用「ART2D2：臆想未來製造所」作為主題號召，以觀念藝術展、舞劇展以及影展作為發聲媒介，漸次地將面對未來的不安與浪漫轉化為藝術作品，藉由藝術作品重建個人與校園、社會之間的關係，反映現今大學生對於未來的想望，即使在現實中夢想中的未來迷茫而不可實現，然而一切不可實現卻又同時可被藝術呈現。" />
+    <meta property="og:image" content="http://artfest.ntu.edu.tw/img/og-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:type" content="image/png">
+  </head>
+  <body>
+    <div class="shopee">
+  <a href="http://mall.shopee.tw/shop/?sid=4348455&source=search#shopid=4348455" target="_blank">
+    <img src="img/shopee-icon.png">
+  </a>
+</div>
+<div class="facebook-fanpage">
+  <a href="https://www.facebook.com/NTUartfest" target="_blank">
+    <i class="icon fa fa-facebook" aria-hidden="true"></i>
+  </a>
+</div>
+<!-- <div class="messenger" data-uk-offcanvas="{target:'#chatroom'}">
+  <i class="icon fa fa-comments-o" aria-hidden="true"></i>
+</div>
+<div id='chatroom' class="uk-offcanvas">
+  <div class="customer-support uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <div class="uk-width-1-1 message-header">
+      <div class="uk-text-center uk-text-middle message-title">客服專線</div>
+    </div>
+    <div class="uk-width-1-1" id="messages">
+      <p class="message-content uk-text-left">
+        Art2D2：我是均豪，是藝術季的代理人，擁有人工智慧可以跟人類對話。很高興為你服務。
+      </p>
+    </div>
+    <div class="uk-width-1-1 message-input">
+      <input class='uk-align-center uk-align-middle' type="text" placeholder="問我些問題吧" id="message-box">
+    </div>
+  </div>
+</div>
+<script src="socket.io/socket.io.js"></script>
+<script src="/js/chatroom.js"></script> -->
+    <header id="top">
+      <div class="uk-grid">
+        <div class="uk-container-center uk-width-large-1-5 uk-width-medium-1-3 uk-width-small-1-5">
+          <div class="brand-image">
+            <img src="img/ntuaf.png">
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- nav for mobile -->
+    <nav class="uk-navbar uk-visible-small navbar-custom" data-uk-sticky>
+      <ul class="uk-navbar-nav">
+        <li><a href="newsroom/index.html" class="uk-navbar-nav-subtitle">最新消息<div>news</div></a></li>
+        <li><a href="partners/index.html" class="uk-navbar-nav-subtitle">合作夥伴<div>partners</div></a></li>
+      </ul>
+    </nav>
+    <nav class="uk-navbar navbar-custom uk-hidden-small" data-uk-sticky >
+      <ul class="uk-navbar-nav uk-hidden-small">
+        <li><a class="uk-navbar-nav-subtitle" slow-scroll target="#core">主視覺<div>core visual</div></a></li>
+        <li class="uk-hidden-small"><a class="uk-navbar-nav-subtitle" slow-scroll target="#schedule">展演行事曆<div>schedule</div></a></li>
+        <li><a class="uk-navbar-nav-subtitle" slow-scroll target="#projects">策展專案<div>projects</div></a></li>
+        <li><a href="partners/index.html" class="uk-navbar-nav-subtitle">合作夥伴<div>partners</div></a></li>
+        <li><a href="questions/index.html" class="uk-navbar-nav-subtitle">常見問題<div>FAQ</div></a></li>
+      </ul>
+    </nav>
+    <!-- intro part -->
+    <section id="intro">
+      <div class="uk-cover-background uk-position-relative">
+        <img class="full-width-image" src="img/intro-bg.png">
+        <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+          <div class="uk-grid">
+            <div class="uk-container-center uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:900}">
+              <img src="img/logo.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- core visual part -->
+    <section id="core">
+      <div class="uk-grid">
+        <div class="uk-container uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1">
+          <div class="brand-image">
+            <img src="img/poster.png">
+          </div>
+        </div>
+        <div class="uk-width-large-1-2 uk-width-medium-1-1 uk-width-small-1-1">
+          <article class="uk-article">
+            <h3>藝術季理念</h3>
+            <p>
+              以未來作為主題號召，魯蛇作為創作精神，藝術作為發聲媒介，2016年的臺大藝術季以「ART2D2：臆想未來製造所」作為母題，透過探討「臆想未來」的語意往返，讓每個參與藝術季的觀眾都能擴充對於未來想像的積極感應方式，啟發個人之於社會反思的靈光，希冀社會議題能夠透過藝術的形式被承載、展示，引領新的世代的我們思而後動、大聲疾呼，決定並創造一個我們想要的未來。
+              <br>
+              現實中夢想的未來迷茫而不可實現；然而，當我們以觀念藝術展、舞劇展以及影展作為傳聲筒，漸次地將面對未來的浪漫 ［喔，還有面對未來的不安 ］轉化為藝術作品，一切不可實現卻又同時可能被藝術呈現。
+            </p>
+            <hr class="uk-article-divider">
+            <h3>主視覺理念</h3>
+            <p>
+              細胞作為堆疊人類生命的積木，製造著生命運作的能量，發展著生命演化的未來。在未來一片無垠的想像裡，因人的生命而存在溫度。取材於生活裡隨手可得的物質，在微觀細胞內的視角，依然傳遞人類最直接的溫度。藉由掃描布料、牙籤與塑膠瓶等生活用品，後製成細胞內一顆顆的胞器。鮮明不失溫暖的配色，象徵生命演化的可能，應打破色彩既定的想像框架。胞器間以白線條構成的幾何圖案，則凸顯細胞內物質的製造過程與交互作用。
+              <br>
+              第二十二屆臺大藝術季以「ART2D2 臆想未來製造所」為主題，期望觀者能藉由欣賞主視覺，與藝術季對「未來」與「製造」的詮釋產生共鳴。
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="schedule" class="uk-hidden-small">
+      <div class="uk-grid">
+        <div class="uk-container uk-container-center uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1">
+          <!-- <div class="brand-image"> -->
+          <img src="img/schedule.png">
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+    <section id="project-loading" style="display:none;">
+      <div  class='uk-container-center uil-ripple-css' style='transform:scale(0.6);'><div></div><div></div></div>
+    </section>
+    <section id="projects">
+      <h3 class="uk-visible-small">藝術季專案 Projects</h3>
+      <!-- Filter Controls -->
+      <ul id="project-filter" class="uk-subnav project-filter-custom uk-hidden-small">
+        <li data-uk-filter=""><a class="uk-button btn btn-primary" href="">所有專案</a></li>
+        <li data-uk-filter="filter-a" ><a class="uk-button btn btn-primary" href="#">藝術設置計畫</a></li>
+        <li data-uk-filter="filter-b" ><a class="uk-button btn btn-primary" href="#">觀念創作展</a></li>
+        <li data-uk-filter="filter-c"><a class="uk-button btn btn-primary" href="#">工作坊 ＆ 參與互動活動</a></li>
+        <li data-uk-filter="filter-d"><a class="uk-button btn btn-primary" href="#">舞劇展</a></li>
+        <li data-uk-filter="filter-e"><a class="uk-button btn btn-primary" href="#">蛻皮派對</a></li>
+      </ul>
+      <!-- Dynamic Grid -->
+      <div id="project-grid" class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-3">
+        <!-- 工作坊＆參與互動活動 filter-c -->
+        <div data-uk-filter="filter-c">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/day-factory.jpg" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">不一樣製造所 Beyond Factory</h3>
+                <p>工作坊＆參與互動活動</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-day-factory" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-c">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/r2d2-control.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">異識流</h3>
+                <p>工作坊＆參與互動活動</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-r2d2-control" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-c">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/night-blindfind.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">盲尋</h3>
+                <p>工作坊＆參與互動活動</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-night-blindfind" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-c">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/r2d2-hours.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">hours</h3>
+                <p>工作坊＆參與互動活動</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-r2d2-hours" data-uk-modal></a>
+          </div>
+        </div>
+        <!-- /工作坊＆參與互動活動 filter-c -->
+        <!-- 觀念創作展 filter-b -->
+        <div data-uk-filter="filter-b">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/r2d2-time.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">交疊時間</h3>
+                <p>觀念創作展</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-r2d2-time" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-b">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/dream-cycle.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">圓</h3>
+                <p>觀念創作展</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-dream-cycle" data-uk-modal></a>
+          </div>
+        </div>
+        <!-- /觀念創作展 filter-b -->
+        <!-- 舞劇展 filter-d -->
+        <div data-uk-filter="filter-d">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/night-happy.jpg" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">我們最快樂</h3>
+                <p>舞劇展</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-night-happy" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-d">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/dream-danger.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">危型社會</h3>
+                <p>舞劇展</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-dream-danger" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-d">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/dream-love.jpg" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">愛的汩汩</h3>
+                <p>舞劇展</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-dream-love" data-uk-modal></a>
+          </div>
+        </div>
+        <!-- /舞劇展 filter-d -->
+        <!-- 蛻皮派對 filter-e -->
+        <div data-uk-filter="filter-e">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/vdc-party.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">蛻皮派對</h3>
+                <p>蛻皮派對</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-vdc-party" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-e">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/vdc-room.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">房間</h3>
+                <p>蛻皮派對</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-vdc-room" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-e">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/vdc-hospital.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">病院</h3>
+                <p>蛻皮派對</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-vdc-hospital" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-e">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/vdc-otter.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">海獺 427 號</h3>
+                <p>蛻皮派對</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-vdc-otter" data-uk-modal></a>
+          </div>
+        </div>
+        <!-- /蛻皮派對 filter-e -->
+        <!-- 藝術設置計畫 filter-a -->
+        <div data-uk-filter="filter-a">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/day-notlight.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">未明</h3>
+                <p>藝術設置計畫</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-day-notlight" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-a">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/day-together.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">未來總動員</h3>
+                <p>藝術設置計畫</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-day-together" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-a">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/r2d2-look.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">不只是窺視</h3>
+                <p>藝術設置計畫</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-r2d2-look" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-a">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/r2d2-door.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">魯門的世界</h3>
+                <p>藝術設置計畫</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-r2d2-door" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-a">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/night-future.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">失訓的未來</h3>
+                <p>藝術設置計畫</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-night-future" data-uk-modal></a>
+          </div>
+        </div>
+        <div data-uk-filter="filter-a">
+          <div class="uk-overlay uk-overlay-hover">
+            <img src="img/night-book.png" alt="">
+            <div class="uk-overlay-panel uk-overlay-fade uk-flex uk-flex-center uk-flex-middle uk-text-center project-panel-custom">
+              <div>
+                <h3 class="uk-panel-title project-panel-title">預言書</h3>
+                <p>藝術設置計畫</p>
+              </div>
+            </div>
+            <a class="modal-opener uk-position-cover" href="#project-night-book" data-uk-modal></a>
+          </div>
+        </div>
+        <!-- /藝術設置計畫 filter-a -->
+      </div>
+      <!-- Modals -->
+      <!-- filter-a -->
+      <div id="project-day-notlight" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">未明</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              臺灣大學博雅教學館<br>
+              <br>
+              焦土世代：05.16－05.26｜09：00－18：00　臺大博雅教學館<br>
+              蟲洞迷航：05.09－05.26｜09：00－18：00　臺大博雅教學館<br>
+              時光膠囊：05.09－05.26｜09：00－18：00　臺大博雅教學館<br>
+              島嶼：05.09－05.26｜09：00－18：00　臺大博雅教學館
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          【未明】展覽概念：「現在即未來」<br>
+          未來從不是無端而生，而是由我們每分每秒的所作所為運作與累積而來。本展覽選定「現代文明議題與未來演進之假想」作為我們的核心策展主題，透過繪畫、攝影作品與裝置藝術等更多樣的形式，展示創作者所觀察到的當今議題與未來想像。同時，也邀請觀眾一起看見並臆想未來，進而對現在所處的世界與時間有所反思。
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <img src="img/day-notlight.png">
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-day-together" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">未來總動員</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              05.09-05.26<br>
+              牆：美麗與哀愁<br>
+              10：00－20：00　活大沙發區<br>
+              <br>
+              05.07-05.26<br>
+              Art-Bartering Machine<br>
+              平日 12：20－13：20、17：30－18：30<br>
+              假日10：00－12：00、13：00－16：00<br>
+              活大、小福一帶<br>
+              <br>
+              05.17-05.27<br>
+              家．流動．記憶<br>
+              10：00－17：00 （週一公休）<br>
+              再生藝術工坊<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          【你有想過自己在 2050 年會過著什麼樣的生活嗎？<br>
+          <br>
+          牆面創作，讓你透過不同感官去感受，發現未來樣貌的美麗與哀愁並提問思考；家．流動．記憶，藉由住家環境的未來改造計畫，給你一個對於大自然和記憶結合的全新體驗；Art-Bartering Machine，不再只提供冷冰冰的商品，這台神奇的販賣機了解你的一切需求，滿足心靈一角。
+          <br>
+          想親身存在於這樣的未來中？<br>
+          想打造屬於自己的生活？<br>
+          我們在2050年，等你一同來享受。<br>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <img src="img/day-together.png">
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-r2d2-look" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">不只是窺視</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              活大沙發區（以及四處都有攝影機）<br>
+              <br>
+              實體展場時間  05.11－05.27｜08：00－22：00<br>
+              網頁展覽時間  05.11－05.27｜00：00－24：00<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          現代社會因為網路的便利讓人的隱私權越來越薄弱，本應讓社會更安全進步的產品，像手機、監視器等等卻也可能這樣的發展下，在未來變成侵犯他人隱私權的設備。<br>
+          此次展覽藉由放大攝影機等設備與擴大設備介入空間的尺度，探討監視者與被監視者的關係。倘若今日作品成為偷窺這樣
+          侵犯的手段，介入日常生活環境，對於觀者和操作者又會產生怎樣的影響 ？
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/589400194541300/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/589400194541300/">
+          <img class="fuck-uikit-link" src="img/r2d2-look.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-r2d2-door" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">魯門的世界</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              總圖右側走廊 (舟山路旁)<br>
+              <br>
+              05.16－05.20｜10：00－19：30<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          WINNER OR LOSER<br>
+          撕掉別人給的標籤；拋棄他人的看法；溫拿、魯蛇，由你自己定義。<br>
+          <br>
+          「魯門的世界」運用科技藝術的形式，對你的選擇給予聽覺與視覺回饋，並從誠實指數測驗機的參考數據讓你反思，在摒棄他人的眼光後，你內在想法是否誠實反映在外在的行為上。
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <img src="img/r2d2-door.png" >
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-night-future" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">失訊的未來</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              舊體育館後方舞台<br>
+              <br>
+              發光的房間：05.09－05.28｜11：00－13：00　17：00－20：00<br>
+              Foreshadow：05.09－05.28
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          |發光的房間|<br>
+          在夜裡房間發著光，光裡，是未來人際互動的想像。白天看來也許只是個再普通不過的房間，但事實上在各個角落布置著未來的隻字片語。<br>
+          隨著黑夜降臨，撥開幕簾的那一刻 <br>這些散落的訊息便在光影的投射下現形。在發光的房間裡，我們組成了對未來人際關係的想像<br>
+          <br>
+          | Foreshadow |<br>
+          我們持續地與這個世界發生關係。在時間裡，我們交談、歌唱、與人爭執、與人相愛。這些行為的軌跡慢慢長出，長成具象的網格。在夜裡，成為更加龐大的存在。<br>
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/1752755211624901/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/1752755211624901/">
+          <img  class="fuck-uikit-link" src="img/night-future.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-night-book" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">預言書</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              第一學生活動中心 103 室<br>
+              <br>
+              05.06－05.28 ｜11：00－18：00
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          假如三人成虎，天馬行空的荒唐預測，在某個未來即能成真，而這個世界、這個時空，將因你/妳的一個奇想翻轉。<br>
+          <br>
+          我們邀請你一同進入這個有如虛空的房間，在這個空間裡，不存在視覺的干擾，只有言語的力量；傾聽上一位參與者對未來的提問，錄製一段接續的回答。<br>
+          <br>
+          在時光累積的洪流中，你的故事固然只是一個節點，你卻仍能夠透過每週出版的一份報紙--預言家日報，持續關注故事的發展，窺伺其他參與者對未來的杜撰。
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <img src="img/night-book.png" >
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- /filter-a -->
+      <!-- filter-b -->
+      <div id="project-r2d2-time" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">交疊時間</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              第一學生活動中心地下室<br>
+              <br>
+              05.11－05.28｜09：00－21：00<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          從法國大革命中被課徵重稅的農民暴徒；228和白色恐怖事件中被處決的台獨與共產份子；到反服貿學運，靜坐抗議卻被指為暴民的學生。<br>
+          <br>
+          這些常是掌握話語權者，用來模糊對方主張概念，讓壓迫合理化的方式。<br>
+          我們定義標籤為，一個簡化的字詞、一個反對的理由、或是純粹負面的攻擊。標籤出現在一個群體壓迫另一個群體時，藝術風格緊密連接著當時的社會風氣與群眾價值。<br>
+          <br>
+          我們相信讓某個視覺記錄，若以不同時代的特定藝術風格重新建構，能使故事與背後的脈絡跨越時空的限制，感受在那時間軸上，荒謬地反覆出現的壓迫、類似的標籤。<br>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <img src="img/r2d2-time.png" >
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-dream-cycle" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">圓</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              第一學生活動中心 103 室<br>
+              <br>
+              05.06－05.28 ｜11：00－19：00（週一至週六）
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          生命如同一個圓，沿著觸、視、味、嗅、聽五覺房間展開----<br>
+          <br>
+          經歷五感刺激，進入透視朦朧的空間，象徵生命瀕臨結束，記憶片段不再留存，殘餘聲音是與外界唯一的聯繫；生命隨著進入死亡長廊，逐漸消逝。<br>
+          <br>
+          未來的生活有未來的感官刺激與生活經驗，即便歷經不同生命摩擦，終將走向死亡，反反覆覆，終而復始地像一個圓，而我們正行走於中。
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <img src="img/dream-cycle.png" >
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- /filter-b -->
+      <!-- filter-c -->
+      <div id="project-day-factory" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">不一樣製造所 Beyond Factory</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              找到咖啡（臺大新月台二樓）<br>
+              <br>
+              日常手作<br>
+              05.10－05.26 ｜平日10：00－18：00　（假日不開放）<br>
+              <br>
+              教學型手作（採報名制）<br>
+              木木好食光<br>
+              05.11｜18：00－21：00<br>
+              05.12｜18：00－21：00<br>
+              <br>
+              鉤 together<br>
+              05.18｜18：00－21：00<br>
+              05.19｜18：00－21：00<br>
+              <br>
+              喜歡 泥<br>
+              05.25｜18：00－21：00
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          當「科技寒流」席捲2050、鋼鐵佔領日常，人們該何去何從？不甘被奈米微粒吞沒的「不一樣Makers」終究對此感到厭倦，決心在水泥叢林中築起「不一樣。製造所」，帶領大家找回雙手的力量。<br>
+          <br>
+          走入這獨特而純粹的空間，你便能掛上舒緩的笑容，自由地在材料中穿梭揀選，隨心而至的創作卡片、個性飾品以及多彩紙燈。 此外，每週更有主題工作坊提供給對「手作」欲罷不能的你! <br>
+          無論是在「木木好食光」中磨刻出具有手感的食器，或在「鉤together」裡善用針線，織出可愛小物，抑或在「喜歡 泥 」時，為綠色朋友打造溫暖的水泥盆栽，都是你的最佳選擇。 留下一個夜晚或午後，讓我們一同走入手作的綺想中！
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="http://www.blink.com.tw/event/1181/">
+            報名連結
+          </a>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/1023712297678463/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/1023712297678463/">
+          <img class="fuck-uikit-link" src="img/day-factory.jpg" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-r2d2-hours" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">hours</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              第一學生活動中心地下室<br>
+              <br>
+              05.13、05.20｜<br>
+              17：30－18：30<br>
+              18：40－19：40<br>
+              19：50－20：50<br>
+              <br>
+              05.14、05.15｜<br>
+              05.21、05.22｜<br>
+              13：30－14：30<br>
+              14：40－15：40<br>
+              15：50－16：50<br>
+              17：00－18：00<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          「再給自己一次機會，你會如何安排人生？」<br>
+          <br>
+          在未來的世界，我們大膽假想：時間將成為交易的媒介。HOURS即以此想法出發，打造一個「以時間為貨幣」的空間，玩家們將自由分配手上的時間，以圓滿不同階段的人生。時間即是金錢，遊戲裡所有交易的媒介皆為「時間」，遊戲角色所擁有的時間一旦歸零，即宣告遊戲結束。而時間有限，慾望無窮，遊戲中，玩家可以自由選擇生命中的投資與追求，並仔細思考：如何抉擇才能創造最大價值。<br>
+          <br>
+          當時間成為唯一的資產<br>
+          你選擇揮霍還是把握?
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="http://www.blink.com.tw/event/1176/">
+            報名連結
+          </a>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/1760872727478856/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/1760872727478856/">
+          <img class="fuck-uikit-link" src="img/r2d2-hours.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-r2d2-control" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">異識流</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              第一學生活動中心地下室<br>
+              <br>
+              Ear Worm<br>
+              05.09－05.27<br>
+              一、二、三、五｜12：20、13：20、14：20<br>
+              三、四｜21：00、22：00、23：00<br>
+              每場 2－3 人約 50 分鐘。<br>
+              Beyond The Map<br>
+              05.07－05.08、05.14－05.15、05.21－05.22<br>
+              六、日｜13：30－16：00<br>
+              六｜17：00－19：30<br>
+              每場 8 人約 140 分鐘。<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          誠徵受試者<br>
+          臺大藝術季 R2D2 實驗室 ( National Taiwan University Art Festival R2D2 Experimental Laboratory, NTUAF R2D2EL) 將於 2016 年 五月 進行一項開發中的人體實驗<br>
+          詳細資訊如下：<br>
+          專案名稱：異識流<br>
+          說明：本專案為一項人體實驗，邀請受試著來接受一項新開發的儀器之測試，受試者分成控制者與被控制者，被控制者為儀器配戴者，控制者為訊號輸出端（詳見下方示意圖）。底下包含兩個子計畫，分別為「Ear Worm」和「Beyond The Map」。<br>
+          實驗目的：透過語音輸入指令，入侵受試者的意識，將一切責任風險排除，挑戰人造意識誕生之前，人腦無法抗拒的極限。
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary"  href="http://www.blink.com.tw/event/1177/">
+            報名連結
+          </a>
+          <a class="fuck-uikit-link uk-button btn btn-primary"  href="https://www.facebook.com/events/1684170555167700/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/1684170555167700/">
+          <img class="fuck-uikit-link" src="img/r2d2-control.png">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-night-blindfind" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">盲尋</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              女九旁圍牆<br>
+              <br>
+              第一場　05.10｜20：00－21：00<br>
+              第二場　05.11｜20：00－21：00<br>
+              第三場　05.14｜20：00－21：00<br>
+              第四場　05.16｜20：00－21：00<br>
+              第五場　05.18｜20：00－21：00<br>
+              第六場　05.21｜20：00－21：00<br>
+              第七場　05.23｜20：00－21：00<br>
+              第八場　05.25｜20：00－21：00<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          「視覺」在五感之中，擁有至高無上的主宰力；但相較於直覺的觀察，我們相信其他感知更能賦予人們想像和創造的空間。黑暗雖然剝奪了我們的視覺，卻讓我們更專注於觸覺、嗅覺、味覺、聽覺等被動的感官。「盲尋」旨在挑戰視覺遭剝奪後，其他感知對於環境訊息的感受力，並更進一步顛覆視覺的主宰地位。我們將以音樂作為故事媒介，讓參與者在空曠的室外環境中，戴上耳機聆聽特定主題的音樂。同時釋放各種氣味，透過感官的交互作用，建構不同個體對未來的想像，參與者隨後立即以噴漆在牆面上塗鴉創作，將聽覺與嗅覺經想像、轉化後，再進一步轉化為視覺的影像。
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="http://www.blink.com.tw/event/1178/">
+            報名連結
+          </a>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/988088277913164/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/988088277913164/">
+          <img class="fuck-uikit-link" src="img/night-blindfind.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- /filter-c -->
+      <!-- filter-d -->
+      <div id="project-dream-love" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">愛的汩汩</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              第一學生活動中心　B1 文藝展示室<br>
+              <br>
+              05.07｜15：30<br>
+              05.07｜18：30<br>
+              05.08｜15：30<br>
+              05.08｜18：30<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          人與人的交織開始於那一秒空氣，不安份地緩緩凝結成愛情。<br>
+          她如夢一般美好，卻又消耗人的生命；她帶給人不切實際的快樂，卻又有真實的痛苦。在這樣的夢碎夢醒之中，我們意識到靈魂的活性及生命的運轉。<br>
+          愛情在人的生命中既是救贖又是毀滅，這個創作表現了愛對於人的消耗，以及人們對於愛情的真實給予。她是人們生命中的一個權利，也是義務，而我們也都心甘情願地任她消磨，唯有這樣我們才能真切地活著。有了愛情，我們得以流動、前行，生命才能以汩汩之脈流向未來。
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary"  href="http://www.blink.com.tw/event/1139/">
+            報名連結
+          </a>
+          <a class="fuck-uikit-link uk-button btn btn-primary"  href="https://www.facebook.com/events/1567658040230982/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/1567658040230982/">
+          <img class="fuck-uikit-link" src="img/dream-love.jpg" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-dream-danger" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">危型社會</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              第一學生活動中心 104 室<br>
+              <br>
+              05.14｜14：00－16：00、19：00－21：00<br>
+              05.15｜14：00－16：00、19：00－21：00<br>
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          當今社會對同志看似包容理解，但事實或許並非如此。當你真正和一個同志相處，或你最親近的人就是同志的時候，你會如何面對他的不同呢？<br>
+          本製作與臺灣應用劇場發展中心合作，希望透過「論壇劇場」的形式突破傳統劇場的觀演關係，呈現出同志與身邊的人之間的關係與衝突事件，讓觀眾親身嘗試改變劇中事件，證明每個人的選擇都會深深影響未來。透過觀眾的參與，每場演出會激盪出全然不同的火花，而觀眾與演員也能一同發掘更多不一樣的可能。
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="http://www.blink.com.tw/event/1182/">
+            報名連結
+          </a>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/1537573106544296/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/1537573106544296/">
+          <img class="fuck-uikit-link" src="img/dream-danger.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-night-happy" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">我們最快樂——<br>去你的烏托邦</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              總圖後草皮<br>
+              <br>
+              05.20｜19：00－20：30
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          「林盡水源，便得一山，山有小口，彷彿若有光。」<br>
+          有光。刺眼的光。<br>
+          我啜泣著、疲憊地走到那面前。<br>
+          忽然間我所有悲傷都被照亮了。滿身的結痂在一瞬間彷彿被人撕開。<br>
+          「好痛！」<br>
+          而在我的背後，我看著我的影子水平地拉長、垂直地生長，直至他長出了和我一樣的面貌。<br>
+          他走過來對我說：「你坐在這吧。讓我演齣戲給你看。看完了，再決定你要不要進來。」<br>
+          他按著我的肩膀，我坐下，眼淚沿臉頰滑落。他轉過身，一道布幕降下。他看上去非常快樂，怎麼我就止不住悲傷？<br>
+          就在此時，他跳起了舞——<br>
+          烏托邦、桃花源。快樂的地方。怎麼稱呼隨便你。但在這個醉生夢死的世界裡，告訴我：你的快樂是什麼？<br>
+          五月二十，和我們一起----去你的烏托邦
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/229689170725203/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/229689170725203/">
+          <img class="fuck-uikit-link" src="img/night-happy.jpg" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- /filter-d -->
+      <!-- filter-e -->
+      <div id="project-vdc-party" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">蛻皮派對</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              第一學生活動中心 104 室<br>
+              <br>
+              05.17 | 18:30 - 21:30<br>
+              05.18 | 18:30 - 21:30<br>
+              05.19 | 18:30 - 21:30<br>
+              05.24 | 18:30 - 21:30<br>
+              05.25 | 18:30 - 21:30<br>
+              05.26 | 18:30 - 21:30
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          你是魯蛇嗎？世人對魯蛇最一般的定義是：沒有伴侶、沒有目標、沒有熱情理想又一事無成的人。那讀到最高學府的我們呢？為什麼有時也認為自己是一條魯蛇？<br>
+          物質層面快速發展，科技日新又新，個人購買力卻一直沒有對應的提升，不禁讓人懷疑是否只要透過不斷的努力，難道就能到達應許之地？在近期的選舉中，在野黨終於打敗執政黨，完成全面的政黨輪替，但我們為什麼還是懷疑、還是不安？<br>
+          所以我們不停在各式文本中尋找，尋找與自己相似的投射、悲慘又哀傷的反證。「蛻皮派對」是魯蛇們成長的狂歡，用精選的短片展現，一層層皮蛻下後，蛇的本質與蛇的內在力量。
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/451726865016943/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/451726865016943/">
+          <img  class="fuck-uikit-link" src="img/vdc-party.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-vdc-room" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">房間<br>Room</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              本影片將在《蛻皮派對》播映
+            </p>
+          </blockquote>
+          <hr class="uk-article-divider">
+          在密閉、沒有窗戶的房間，打扮相似的人們過著非常日常的生活；除了主角以外的人都拿著手機、只關心著螢幕中的資訊，因此A與其他人話題脫節,常常只能做自己的事。在一次次的夢中，看見與眾不同的女孩 開始朝暮思念著她，每次醒來時 都感到一樣的沮喪。<br>
+          有天，房間裡有個人注意到的不同、認為十分有趣。當那人慢慢敲開封閉已久的內心的時候，忽然在人群的騷動裡發現女孩⋯⋯
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/451726865016943/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/451726865016943/">
+          <img  class="fuck-uikit-link" src="img/vdc-room.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-vdc-hospital" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">病院<br>The Hospital</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              本影片將在《蛻皮派對》播映
+            </p>
+          </blockquote>
+          在一間瀕臨破產的療養院裡，容納了各種不同病況的病人。<br>
+          隨著日子一天一天的過去，院裡的經濟狀況每況愈下。院長面對父親生前寄託的這家病院，不知如何是好。<br>就在此時，他發現院中有個病患昊宇，擁有驚人的繪畫天賦。院長靈機一動，希望新點子能夠幫助窮困的療養院擁有源源不絕的收入來源…
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/451726865016943/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/451726865016943/">
+          <img  class="fuck-uikit-link" src="img/vdc-hospital.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <div id="project-vdc-otter" class="uk-modal" data-uk-modal="{center:true}">
+  <div class="uk-modal-dialog uk-modal-dialog-large">
+    <a class="uk-modal-close uk-close"></a>
+    <div class="uk-grid uk-flex-middle">
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+        <article class="uk-article article-custom">
+          <h1 class="uk-article-title article-title">海獺 427 號<br>Otter Space</h1>
+          <blockquote>
+            <p class="uk-article-meta article-meta">
+              本影片將在《蛻皮派對》播映
+            </p>
+          </blockquote>
+          這是一所被畫布封閉、與世隔絕的校園，大家都戴著海獺頭套、穿著一樣的服裝，海獺們不會講話、彼此並不交談，生活規律且平和。427號是一隻樂於助人、受歡迎的海獺，負責晚上校園巡邏，日復一日。<br>
+          這一天，一位穿著正常，沒有海獺頭的轉學生來到校園，頓時海獺們人心惶惶，紛紛揣測著這位轉學生的來歷。這個夜晚，427號一如往常在校園巡邏，背後卻不時傳來忽近忽遠的腳步聲，恐懼、不安、好奇，到底是誰？一陣扭打抵抗，他將427號的海獺頭強行摘下....同時也擊落了，這所封閉海獺學校維持許久的平和安穩，自此揭開改變的序幕…
+          <br>
+          <br>
+          <a class="fuck-uikit-link uk-button btn btn-primary" href="https://www.facebook.com/events/451726865016943/">
+            活動連結
+          </a>
+        </article>
+      </div>
+      <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-hidden-small">
+        <a class="fuck-uikit-link" href="https://www.facebook.com/events/451726865016943/">
+          <img  class="fuck-uikit-link" src="img/vdc-otter.png" >
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- /filter-e -->
+      <!-- /Modals -->
+    </section>
+    <footer>
+      <div class="uk-grid">
+        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+          <h5>
+          第二十二屆臺灣大學藝術季
+          <br>
+          ART2D2：臆想未來製造所
+          <br>
+          主辦單位｜<br class="uk-visible-small">國立臺灣大學學生中心管理組　<br class="uk-visible-small">第二十二屆臺大藝術季籌備團隊
+          </h5>
+        </div>
+        <div class="uk-width-large-1-2 uk-width-medium-1-2 uk-width-small-1-1">
+          <h5>
+          聯絡信箱｜<br class="uk-visible-small"><a href="mailto:ntuartfest22@gmail.com">ntuartfest22@gmail.com</a>
+          <br>
+          地址｜<br class="uk-visible-small">106 臺北市大安區羅斯福路四段一號
+          <br>
+          統一編號｜國立臺灣大學 03734301
+          </h5>
+        </div>
+      </div>
+    </footer>
+    <!-- custom script -->
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- uikit js -->
+    <script src="js/uikit.js"></script>
+    <script src="js/components/sticky.min.js"></script>
+    <script src="js/components/grid.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+<!-- Localized -->

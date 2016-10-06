@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>臺大藝術季 NTUAF OFFICIAL WEBSITE</title>
+    <!-- uikit css -->
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <!-- custom fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="../less/main.css">
+    <meta property="og:url" content="http://artfest.ntu.edu.tw/partners"/>
+    <meta property="og:title" content="臺大藝術季 NTUAF OFFICIAL WEBSITE"/>
+    <meta property="og:description" content="臺大藝術季是每年臺大最盛大的藝文活動，策展團隊以及創作者涵括台北七所大學以及臺大學生共 600 多名，每年都有不同的創新以及突破，今年是二十二屆的臺大藝術季，我們用「ART2D2：臆想未來製造所」作為主題號召，以觀念藝術展、舞劇展以及影展作為發聲媒介，漸次地將面對未來的不安與浪漫轉化為藝術作品，藉由藝術作品重建個人與校園、社會之間的關係，反映現今大學生對於未來的想望，即使在現實中夢想中的未來迷茫而不可實現，然而一切不可實現卻又同時可被藝術呈現。" />
+    <meta property="og:image" content="http://artfest.ntu.edu.tw/img/og-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:type" content="image/png">
+  </head>
+  <body>
+    <div class="shopee">
+  <a href="http://mall.shopee.tw/shop/?sid=4348455&source=search#shopid=4348455" target="_blank">
+    <img src="../img/shopee-icon.png">
+  </a>
+</div>
+<div class="facebook-fanpage">
+  <a href="https://www.facebook.com/NTUartfest" target="_blank">
+    <i class="icon fa fa-facebook" aria-hidden="true"></i>
+  </a>
+</div>
+<!-- <div class="messenger" data-uk-offcanvas="{target:'#chatroom'}">
+  <i class="icon fa fa-comments-o" aria-hidden="true"></i>
+</div>
+<div id='chatroom' class="uk-offcanvas">
+  <div class="customer-support uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <div class="uk-width-1-1 message-header">
+      <div class="uk-text-center uk-text-middle message-title">客服專線</div>
+    </div>
+    <div class="uk-width-1-1" id="messages">
+      <p class="message-content uk-text-left">
+        Art2D2：我是均豪，是藝術季的代理人，擁有人工智慧可以跟人類對話。很高興為你服務。
+      </p>
+    </div>
+    <div class="uk-width-1-1 message-input">
+      <input class='uk-align-center uk-align-middle' type="text" placeholder="問我些問題吧" id="message-box">
+    </div>
+  </div>
+</div>
+<script src="socket.io/socket.io.js"></script>
+<script src="/js/chatroom.js"></script> -->
+    <nav class="uk-navbar navbar-custom" data-uk-sticky>
+      <div class="uk-navbar-flip">
+        <ul class="uk-navbar-nav uk-navbar-right">
+          <li><a href="../index.html" class="uk-navbar-nav-subtitle">回到首頁<div>back to home</div></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- intro part -->
+    <section id="intro">
+      <div class="uk-cover-background uk-position-relative">
+        <img class="full-width-image"  src="../img/intro-bg.png">
+        <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+          <div class="uk-grid">
+            <div class="uk-container-center uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:900}">
+              <img src="../img/logo.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="main-partner">
+      <div class="uk-container-center">
+        <h2>主要贊助</h2>
+        <div class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-3" data-uk-grid="{gutter: 40}" data-uk-grid-match>
+          <div class="partner-custom">
+            <img src="../img/partners/ga.png" class="partner-image">
+            <a href="http://www.garena.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="souvenir">
+      <div class="uk-container-center">
+        <h2>紀念品獨家線上販售平台</h2>
+        <div class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-3 uk-grid-width-large-1-3" data-uk-grid="{gutter: 40}" data-uk-grid-match>
+          <div class="partner-custom">
+            <img src="../img/partners/shopee.png" class="partner-image">
+            <a href="https://shopee.tw/web/" target="_blank" class="uk-position-cover"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="special-partner">
+      <div class="uk-container-center">
+        <h2>特別贊助</h2>
+        <div class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-4 uk-grid-width-large-1-4" data-uk-grid="{gutter: 40}" data-uk-grid-match>
+          <div class="partner-custom">
+            <img src="../img/partners/%E8%8F%AF%E5%8D%97%E9%8A%80%E8%A1%8C.png" class="partner-image">
+            <a href="http://www.hncb.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="sponsors">
+      <div class="uk-container-center">
+        <h2>贊助單位</h2>
+        <div class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-5 uk-grid-width-large-1-5" data-uk-grid="{gutter: 40}" data-uk-grid-match>
+          <div class="partner-custom">
+            <img src="../img/sponsors/blink.png" class="partner-image">
+            <a href="http://www.blink.com.tw" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/viewsonic.png" class="partner-image">
+            <a href="http://www.viewsonic.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/acsip.png" class="partner-image">
+            <a href="http://www.acsip.com.tw" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E6%95%A6%E7%85%8C.png" class="partner-image">
+            <a href="http://www.cavesbooks.com.tw/EC/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E4%B8%AD%E4%BF%A1.png" class="partner-image">
+            <a href="http://www.ctbcculture.org" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E4%BA%94%E6%97%AC.png" class="partner-image">
+            <a href="http://www.drart.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E8%83%96%E5%B0%8F%E5%AD%90.png" class="partner-image">
+            <a href="http://www.fattyboyeezz.com/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/kate.png" class="partner-image">
+            <a href="http://www.kate-global.net/tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E9%BA%92%E9%BA%9F.png" class="partner-image">
+            <a href="http://www.kirin.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E5%88%A9%E7%99%BE%E4%BB%A3.png" class="partner-image">
+            <a href="http://www.liberty.com.tw/ly/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/meiji.png" class="partner-image">
+            <a href="https://www.facebook.com/meiji.taiwan" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E8%8E%AB%E5%87%A1%E5%BD%BC.png" class="partner-image">
+            <a href="http://www.mvp-icecream.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E7%AB%8B%E9%82%A6.png" class="partner-image">
+            <a href="http://www.nippon-paint.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E8%87%AA%E7%84%B6%E9%BB%83.png" class="partner-image">
+            <a href="http://www.huang24.com/basket/index.cgi" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E6%96%BD%E8%8F%AF%E5%AF%87.png" class="partner-image">
+            <a href="http://www.fly-high.com.tw/schwarzkopf/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/skullcandy.png" class="partner-image">
+            <a href="https://www.facebook.com/skullcandy.tw/?fref=ts" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E6%99%82%E5%88%BB%E8%82%B2%E6%A8%82.png" class="partner-image">
+            <a href="https://www.facebook.com/SquareGroup/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E8%B6%85%E7%A1%AC.png" class="partner-image">
+            <a href="https://www.facebook.com/ultrahardtw" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E7%94%9F%E6%B4%BB%E5%B7%A5%E5%A0%B4.png" class="partner-image">
+            <a href="http://www.workinghouse.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/Oin.png" class="partner-image">
+            <a href="https://www.facebook.com/oho.Oin/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E6%89%BF%E5%84%84%E6%96%87%E6%97%85.png" class="partner-image">
+            <a href="http://www.hotelday.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E8%8F%AF%E8%A6%96.png" class="partner-image">
+            <a href="http://ccef.cts.com.tw/foundation/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E9%9B%BB%E8%85%A6%E5%85%88%E7%94%9F.png" class="partner-image">
+            <a href="https://www.facebook.com/MRCCAMPUS" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E8%99%8E%E8%88%AA.png" class="partner-image">
+            <a href="http://www.tigerair.com/tw/zh/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E5%8F%B0%E7%81%A3%E4%B9%8B%E6%98%9F.png" class="partner-image">
+            <a href="https://www.tstartel.com/CWS/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E6%99%B6%E7%A2%A9.png" class="partner-image">
+            <a href="http://tw.pegavision.com/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E8%80%81%E5%AF%A6%E8%AA%AA.png" class="partner-image">
+            <a href="https://www.facebook.com/%E8%80%81%E5%AF%A6%E8%AA%AA-164375137244009" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E5%AF%8C%E9%82%A6.png" class="partner-image">
+            <a href="https://www.facebook.com/Free%E5%90%8C%E5%AD%B8%E5%B9%AB-790234091041791" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E6%B3%95%E8%98%AD%E8%88%8D.png" class="partner-image">
+            <a href="https://www.facebook.com/francinebaking" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E5%9F%BA%E9%87%91%E6%9C%83.png" class="partner-image">
+            <a href="http://www.fortune-land.org.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E9%BA%97%E9%99%BD.png" class="partner-image">
+            <a href="http://www.liveyoung.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/%E8%90%8C%E7%84%99%E5%8F%B8.jpg" class="partner-image">
+            <a href="http://www.monprecieux.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/sponsors/hoverboard.png" class="partner-image">
+            <a href="http://thehoverboardguys.com" target="_blank" class="uk-position-cover"></a>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+    <section id="partners">
+      <div class="uk-container-center">
+        <h2>合作夥伴</h2>
+        <div class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-5 uk-grid-width-large-1-5" data-uk-grid="{gutter: 40}" data-uk-grid-match>
+          <div class="partner-custom">
+            <img src="../img/partners/%E8%8F%AF%E5%B1%B1.png" class="partner-image">
+            <a href="https://www.facebook.com/%E8%8F%AF%E5%B1%B1%E7%95%A2%E6%A5%AD%E5%AD%A3-390532764387826" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E8%8F%AF%E5%B1%B1%E7%95%A2%E6%A5%AD%E5%AD%A3.png" class="partner-image">
+            <a href="https://www.facebook.com/%E8%8F%AF%E5%B1%B1%E7%95%A2%E6%A5%AD%E5%AD%A3-390532764387826" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E5%86%8D%E7%94%9F.png" class="partner-image">
+            <a href="http://www.crc.org.tw/main/modules/MySpace/index.php" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E9%9D%92%E5%B9%B4%E5%84%AA%E4%BA%BA.png" class="partner-image">
+            <a href="http://utheatre.glis.ntnu.edu.tw/content/%E9%9D%92%E5%B9%B4%E5%84%AA%E4%BA%BA" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E4%B8%80%E8%99%9F%E8%97%8D%E5%9C%96.png" class="partner-image">
+            <a href="https://www.facebook.com/bcaststudio/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E5%A5%B3%E4%BA%BA%E8%BF%B7.png" class="partner-image">
+            <a href="http://womany.net/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E6%89%BE%E5%88%B0.png" class="partner-image">
+            <a href="https://www.facebook.com/thecafetrouve" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/citymarz.png" class="partner-image">
+            <a href="http://citymarx.com/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E8%97%9D%E9%9D%92.png" class="partner-image">
+            <a href="https://www.facebook.com/tya175" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E7%A4%BE%E7%A7%91%E9%99%A2.png" class="partner-image">
+            <a href="http://www.coss.ntu.edu.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/partners/%E8%97%9D%E6%96%87%E4%B8%AD%E5%BF%83.png" class="partner-image">
+            <a href="http://arts.ntu.edu.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="media">
+      <div class="uk-container-center">
+        <h2>媒體協力</h2>
+        <div class="uk-grid uk-grid-width-small-1-2 uk-grid-width-medium-1-5 uk-grid-width-large-1-5" data-uk-grid="{gutter: 40}" data-uk-grid-match>
+          <div class="partner-custom">
+            <img src="../img/media/%E6%9C%89%E8%A8%AD%E8%A8%88.png" class="partner-image">
+            <a href="http://shopping.udn.com/mall/cus/gbr/Cc1g00.do" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/media/%E9%86%92%E5%A0%B1.png" class="partner-image">
+            <a href="https://anntw.com/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/media/%E5%B0%8F%E6%97%A5%E5%AD%90.png" class="partner-image">
+            <a href="http://www.oneday.com.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/media/%E5%A4%A7%E8%AA%8C.png" class="partner-image">
+            <a href="http://www.bigissue.tw/" target="_blank" class="uk-position-cover"></a>
+          </div>
+          <div class="partner-custom">
+            <img src="../img/media/bios.png" class="partner-image">
+            <a href="http://www.biosmonthly.com/index.php" target="_blank" class="uk-position-cover"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="thanks">
+      <div class="uk-container">
+        <h2>特別感謝</h2>
+      </div>
+    </section> -->
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- uikit js -->
+    <script src="../js/uikit.js"></script>
+    <script src="../js/components/sticky.min.js"></script>
+    <script src="../js/components/grid.min.js"></script>
+  </body>
+</html>
+<!-- Localized -->

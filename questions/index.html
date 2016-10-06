@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>臺大藝術季 NTUAF OFFICIAL WEBSITE</title>
+    <!-- uikit css -->
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <!-- custom fonts -->
+    <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- custom css -->
+    <link rel="stylesheet" type="text/css" href="../less/main.css">
+    <meta property="og:url" content="http://artfest.ntu.edu.tw/newsroom"/>
+    <meta property="og:title" content="臺大藝術季 NTUAF OFFICIAL WEBSITE"/>
+    <meta property="og:description" content="臺大藝術季是每年臺大最盛大的藝文活動，策展團隊以及創作者涵括台北七所大學以及臺大學生共 600 多名，每年都有不同的創新以及突破，今年是二十二屆的臺大藝術季，我們用「ART2D2：臆想未來製造所」作為主題號召，以觀念藝術展、舞劇展以及影展作為發聲媒介，漸次地將面對未來的不安與浪漫轉化為藝術作品，藉由藝術作品重建個人與校園、社會之間的關係，反映現今大學生對於未來的想望，即使在現實中夢想中的未來迷茫而不可實現，然而一切不可實現卻又同時可被藝術呈現。" />
+    <meta property="og:image" content="http://artfest.ntu.edu.tw/img/og-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta property="og:image:type" content="image/png">
+  </head>
+  <body>
+    <div class="shopee">
+  <a href="http://mall.shopee.tw/shop/?sid=4348455&source=search#shopid=4348455" target="_blank">
+    <img src="../img/shopee-icon.png">
+  </a>
+</div>
+<div class="facebook-fanpage">
+  <a href="https://www.facebook.com/NTUartfest" target="_blank">
+    <i class="icon fa fa-facebook" aria-hidden="true"></i>
+  </a>
+</div>
+<!-- <div class="messenger" data-uk-offcanvas="{target:'#chatroom'}">
+  <i class="icon fa fa-comments-o" aria-hidden="true"></i>
+</div>
+<div id='chatroom' class="uk-offcanvas">
+  <div class="customer-support uk-offcanvas-bar uk-offcanvas-bar-flip">
+    <div class="uk-width-1-1 message-header">
+      <div class="uk-text-center uk-text-middle message-title">客服專線</div>
+    </div>
+    <div class="uk-width-1-1" id="messages">
+      <p class="message-content uk-text-left">
+        Art2D2：我是均豪，是藝術季的代理人，擁有人工智慧可以跟人類對話。很高興為你服務。
+      </p>
+    </div>
+    <div class="uk-width-1-1 message-input">
+      <input class='uk-align-center uk-align-middle' type="text" placeholder="問我些問題吧" id="message-box">
+    </div>
+  </div>
+</div>
+<script src="socket.io/socket.io.js"></script>
+<script src="/js/chatroom.js"></script> -->
+    <nav class="uk-navbar navbar-custom" data-uk-sticky>
+      <div class="uk-navbar-flip">
+        <ul class="uk-navbar-nav uk-navbar-right">
+          <li><a href="../index.html" class="uk-navbar-nav-subtitle">回到首頁<div>back to home</div></a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- intro part -->
+    <section id="intro">
+      <div class="uk-cover-background uk-position-relative">
+        <img class="full-width-image"  src="../img/intro-bg.png">
+        <div class="uk-position-cover uk-flex uk-flex-center uk-flex-middle">
+          <div class="uk-grid">
+            <div class="uk-container-center uk-width-1-3" data-uk-scrollspy="{cls:'uk-animation-fade', repeat: true, delay:900}">
+              <img src="../img/logo.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="uk-grid">
+        <div class="uk-container uk-container-center uk-width-large-1-1 uk-width-medium-1-1 uk-width-small-1-1">
+          <!-- This is the container of the toggling elements -->
+          <ul class="uk-subnav" data-uk-switcher="{connect:'#questions', animation: 'slide-horizontal'}">
+            <li><a href="" class="uk-button btn btn-primary">一般問題</a></li>
+            <li><a href="" class="uk-button btn btn-primary">票卷資訊</a></li>
+            <li><a href="" class="uk-button btn btn-primary">紀念品資訊</a></li>
+            <li><a href="" class="uk-button btn btn-primary">其他</a></li>
+          </ul>
+          <!-- This is the container of the content items -->
+          <ul id="questions" class="uk-switcher">
+            <li>
+              <div class="uk-accordion accordion-custom" data-uk-accordion>
+
+    <h3 class="uk-accordion-title">藝術季是什麼？</h3>
+    <div class="uk-accordion-content">
+      臺大藝術季是每年臺大最盛大的藝文活動，策展團隊以及創作者涵括台北七所大學以及臺大學生共 600 多名，每年都有不同的創新以及突破，今年是二十二屆的臺大藝術季，我們將以「ART2D2：臆想未來製造所」為主題號召，以觀念藝術展、舞劇展以及影展作為發聲媒介，漸次地將面對未來的不安與浪漫轉化為藝術作品，藉由藝術作品重建個人與校園、社會之間的關係，反映現今大學生對於未來的想望，即使在現實中夢想中的未來迷茫而不可實現，然而一切不可實現卻又同時可被藝術呈現。
+    </div>
+
+    <h3 class="uk-accordion-title">這次藝術季與以往的藝術季有什麼不同？</h3>
+    <div class="uk-accordion-content">
+      今年是以未來作為主題號召，魯蛇作為創作精神，藝術作為發聲媒介，2016年的臺大藝術季以「ART2D2：臆想未來製造所」作為母題，透過探討「臆想未來」的語意，讓觀眾擴充對於未來想像，啟發社會反思的靈光，希冀社會議題能夠透過藝術的形式被承載、展示，引領新的世代思而後動、大聲疾呼，創造一個我們想要的未來。
+    </div>
+
+    <h3 class="uk-accordion-title">藝術季有什麼內容？</h3>
+    <div class="uk-accordion-content">
+      有一般常態展區、互動遊戲展區、影展、舞蹈、工作坊還有參與性質的創作等
+    </div>
+
+    <h3 class="uk-accordion-title">誰可以參加藝術季的活動？</h3>
+    <div class="uk-accordion-content">
+      所有人！
+    </div>
+
+    <h3 class="uk-accordion-title">今年藝術季有什麼特色？</h3>
+    <div class="uk-accordion-content">
+      今年的主題名稱為「ART2D2：臆想未來製造所」，以觀念藝術展、舞劇展以及影展作為發聲媒介，想將面對未來的不安與浪漫轉化為藝術作品。
+    </div>
+
+    <h3 class="uk-accordion-title">今年的視覺好漂亮哦，那是什麼啊？</h3>
+    <div class="uk-accordion-content">
+      細胞作為堆疊人類生命的積木，製造著生命運作的能量，發展著生命演化的未來。在未來一片無垠的想像裡，因人的生命而存在溫度。取材於生活裡隨手可得的物質，在微觀細胞內的視角，依然傳遞人類最直接的溫度。藉由掃描布料、牙籤與塑膠瓶等生活用品，後製成細胞內一顆顆的胞器。鮮明不失溫暖的配色，象徵生命演化的可能，應打破色彩既定的想像框架。胞器間以白線條構成的幾何圖案，則凸顯細胞內物質的製造過程與交互作用。 第二十二屆臺大藝術季以「ART2D2 臆想未來製造所」為主題，期望觀者能藉由欣賞主視覺，與藝術季對「未來」與「製造」的詮釋產生共鳴。
+    </div>
+
+    <h3 class="uk-accordion-title">藝術季是什麼時候到什麼時候？</h3>
+    <div class="uk-accordion-content">
+      05.06－05.28
+    </div>
+
+    <h3 class="uk-accordion-title">藝術季有正式的開始與結束時間嗎？</h3>
+    <div class="uk-accordion-content">
+      05.06 當天是藝術季開幕式，在椰林大道盡頭有盛大的展演，歡迎大家蒞臨欣賞；而 05.28 是藝術季展期的最終日喔。
+    </div>
+
+    <h3 class="uk-accordion-title">藝術季有哪些展區？</h3>
+    <div class="uk-accordion-content">
+      藝術季展區廣布於整個臺大校園，包含活大、博雅教學館、找到咖啡（新月台）、總圖旁（舟山路上）、女九餐廳旁工地鐵皮、總圖後草皮、舊體後方舞台、校外也設有展區，例如再生藝術工坊、寶藏巖、大稻埕等...
+    </div>
+
+    <h3 class="uk-accordion-title">要去哪裡拿藝術季的手冊？</h3>
+    <div class="uk-accordion-content">
+      藝術季官方的資訊台。
+    </div>
+
+    <h3 class="uk-accordion-title">藝術季是由誰組成的？</h3>
+    <div class="uk-accordion-content">
+      臺大藝術季是每年臺大最盛大的藝文活動，策展團隊以及創作者涵括台北七所大學以及臺大學生共 600 多名，每年都有不同的創新以及突破。
+    </div>
+
+</div>
+            </li>
+            <li>
+              <div class="uk-accordion accordion-custom" data-uk-accordion>
+
+  <h3 class="uk-accordion-title">藝術季是免費參與的嗎？</h3>
+  <div class="uk-accordion-content">
+    大部份是免費參與，只有部分的展覽（愛的汩汩、危型社會、品盲、不一樣製造所、盲尋、異識流、Hours）需要購票呦！
+  </div>
+
+  <h3 class="uk-accordion-title">什麼時候開始販售票券？</h3>
+  <div class="uk-accordion-content">
+    現在已經開放購票了，數量有限請務必儘早購買。
+    <br>
+    <a href="http://www.blink.com.tw/store/306?p=product" class="inline-link">售票連結</a>
+  </div>
+
+  <h3 class="uk-accordion-title">如何購買需要藝術季展覽的票券？</h3>
+  <div class="uk-accordion-content">
+    可以透過 Blink 線上購票系統買到藝術季展覽的票卷呦！在訂購隔一天晚上十二點前繳費即可。
+    <br>
+    <a href="http://www.blink.com.tw/store/306?p=product" class="inline-link">售票連結</a>
+  </div>
+
+  <h3 class="uk-accordion-title">如果要退票該怎麼辦？</h3>
+  <div class="uk-accordion-content">
+    付費票券購票完成以後，請至信箱收信會有連結可以點選「退票」；如果是免費票券，請直接私訊粉絲專頁，或者使用 Blink 留言，告知我們您的訂單編號，我們會手動幫您退票。
+  </div>
+</div>
+            </li>
+            <li>
+              <div class="uk-accordion accordion-custom" data-uk-accordion>
+
+  <h3 class="uk-accordion-title">今年有哪些紀念品可以買？</h3>
+  <div class="uk-accordion-content">
+    我們今年的紀念品有藝術季帆布袋、刮金明信片、隨行杯、腳踏車坐墊套還有鋼筆，歡迎參考看看！都是今年新設計的產品，藝術季的 <a href="https://www.facebook.com/NTUartfest" class="inline-link"> Facebook </a>和<a href="https://www.instagram.com/ntuartfest/" class="inline-link"> Instagram </a>會定期紀念品公布詳細，如果有需要可以到蝦皮拍賣訂購。
+  </div>
+
+  <h3 class="uk-accordion-title">怎麼購買藝術季紀念品？</h3>
+  <div class="uk-accordion-content">
+    可以先到蝦皮拍賣下單訂購，之後直接到超商取貨或是藝術季在活大的資訊站領取。如在資訊站領取的話，我們會提供免運費的服務。
+  </div>
+
+  <h3 class="uk-accordion-title">如果想要退換貨，該怎麼辦？</h3>
+  <div class="uk-accordion-content">
+     如果紀念品有瑕疵可帶至藝術季資訊站來更換，但若是人為因素或非重大瑕疵，可能就沒辦法替您更換，不好意思！
+  </div>
+
+  <h3 class="uk-accordion-title">有任何優惠活動或折價方式嗎？</h3>
+  <div class="uk-accordion-content">
+     陸續在藝術季的粉絲專頁上會有抽獎活動或是組合優惠的訊息，還麻煩您密切關注，也請多支持我們的活動，可以多邀請朋友一起來玩或者是系上團購喔！
+  </div>
+</div>
+
+            </li>
+            <li>
+              <div class="uk-accordion accordion-custom" data-uk-accordion>
+
+  <h3 class="uk-accordion-title">觀念創作展、藝術設置計畫、參與互動活動這些有什麼差別？</h3>
+  <div class="uk-accordion-content">
+    在本次的藝術季之中，都有活動或表演使用這些活動形式，而其中他們之間的差異就是在藝術表現形式上使用了不太一樣的手法。
+    <br>
+    <br>
+    藝術設置計畫：就會比較像是一般在美術館、博物館所看到的靜態展出，由藝術家們創造出藝術品並由觀眾主要以觀看的方式而理解其所想要傳達的理念。
+    <br>
+    <br>
+    觀念創作展：以一個抽象概念作為最初發想，而用舞蹈、戲劇等等非靜態方式呈現。
+    <br>
+    <br>
+    參與互動活動：觀眾不再只是被動的接受理念、想法，而是可以透過和展品的主動互動下進而影響展品，並從與展品互動的過程中獲得更直接、更深刻的感受。
+  </div>
+  <h3 class="uk-accordion-title">Nothing Here</h3>
+  <div class="uk-accordion-content">
+    <a href="../how-to-basic/index.html" class="inline-link">Told you so.</a>
+  </div>
+</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- jQuery -->
+      <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <!-- uikit js -->
+      <script src="../js/uikit.js"></script>
+      <script src="../js/components/sticky.min.js"></script>
+      <script src="../js/components/grid.min.js"></script>
+      <script src="../js/components/accordion.min.js"></script>
+      <script src="../js/main.js"></script>
+      <script type="text/javascript">
+      UIkit.on('afterready.uk.dom', function() {
+      var accordion = UIkit.accordion(UIkit.$('.uk-accordion'), {collapse:false, showfirst: false});
+        accordion.find('[data-wrapper]').each(function () {
+        accordion.toggleItem(UIkit.$(this), true, false); // animated true and collapse false
+        });      
+      });
+      </script>
+    </body>
+  </html>
+<!-- Localized -->
